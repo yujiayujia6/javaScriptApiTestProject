@@ -2,6 +2,10 @@
   "name": "javaScriptApiTestProject",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "clean": "rimraf mochawesome-report/",
+    "test": "yarn run clean && mocha --timeout 10000 --reporter mochawesome"
+  },
   "repository": "https://github.com/yujiayujia6/javaScriptApiTestProject.git",
   "author": "Jia Yu <yujiayujia9@hotmail.com>",
   "license": "MIT",
